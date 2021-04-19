@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <p> version 1.6</p>
+    <p> version 1.6.1</p>
 </body>
 <script>
     //prompt user to input rock, paper or scissors
 let  input = window.prompt("Choose your weapon! (Rock, Paper or Scissors): ");
 
-function validChoice(input) {
+function validChoice() {
     // make sure the input is recorded with this command
 
         // determine what their choice is and if it's valid
         if (input ===  "rock" || "paper" || "scissors") { 
-            return "This choice is valid";
+            console.log("This choice is valid");
         }
          // Might need to add aditional code to deal with user inputs with capitals
         else {
-            return "Invalid Selection";
+            console.log("Invalid Selection");
         }
 }
-console.log("I think I understand something? Maybe?");
-console.log(validChoice(input));
+console.log(validChoice());
 </script>
 
 </html>
