@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+    //prompt user to input rock, paper or scissors
+
+function chooseYourWeapon();
+
+    let userChoice = prompt("Choose your weapon!");
+    let userWeapon;
+    // make sure the input is recorded with this command
+
+        // determine what their choice is and if it's valid
+        if userChoice ==  ("rock" || "paper" || "scissors") { 
+            userChoice = userWeapon
+            break;
+        }
+         // Might need to add aditional code to deal with user inputs with capitals
+        else {
+
+            return "Invalid Selection" ;
+        }
+
+    //randomly choose rock paper or scissors for the computer
+    let choiceArray = [rock, paper, scissors];
+    let cpuWeapon = <randomization code;
+    //compare the two values to determine the winner
+        Switch (userWeapon, cpuWeapon) {
+            case userWeapon == "rock" {
+                if cpuWeapon == "rock" {
+                    return "Draw! Go again";
+                    // Going to have to loop back to user choice on draws
+                }
+                else if cpuWeapon  == "paper" {
+                    return "You lose";
+                }
+                else {
+                    return "You win";
+                }
+            }
+            case userWeapon == "paper" {
+                if cpuWeapon == "rock" {
+                    return "You win!";
+                }
+                else if cpuWeapon  == "paper" {
+                    return "Draw! Go Again";
+                }
+                else {
+                    return "You lose";
+                }
+            }
+            case userWeapon == "scissors" {
+                if cpuWeapon == "rock" {
+                    return "You lose";
+                }
+                else if cpuWeapon  == "paper" {
+                    return "You win!";
+                }
+                else {
+                    return "Draw! Go again";
+                }
+            }
+        }
+
+    //most straightforward solution that comes to mind is making one large switch statements with other conditional embedded
+
+</script>
+
+</html>
