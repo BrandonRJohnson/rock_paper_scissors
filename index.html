@@ -1,79 +1,27 @@
 <!DOCTYPE html>
 <html>
-
+<body>
+    <p> version 1.5.1 </p>
+</body>
 <script>
     //prompt user to input rock, paper or scissors
 function choose() {
-let userChoice = prompt("Choose your weapon! (Rock, Paper or Scissors): ");
-let userWeapon;
+    let userChoice = prompt("Choose your weapon! (Rock, Paper or Scissors): ");
+    let userWeapon;
     // make sure the input is recorded with this command
 
         // determine what their choice is and if it's valid
-    if (userChoice.toLowerCase() ==  "rock" || "paper" || "scissors") { 
-        userChoice = userWeapon
-        break;
+        if (userChoice.toLowerCase() ==  "rock" || "paper" || "scissors") { 
+            userChoice = userWeapon;
         }
          // Might need to add aditional code to deal with user inputs with capitals
         else {
-
-            return "Invalid Selection" ;
+            return "Invalid Selection";
         }
 }
 
 console.log(choose);
 
-    //randomly choose rock paper or scissors for the computer
-function computerPlay
-let choiceArray = [rock, paper, scissors];
-let cpuWeapon = <randomization code;
-    //compare the two values to determine the winner
-
-function playRound(userWeapon, cpuWeapon) {
-    switch(userWeapon) {
-        case userWeapon == "rock":
-            if cpuWeapon == "rock" {
-                    return "Draw! Go again";
-                    // Going to have to loop back to user choice on draws
-            }
-            else if cpuWeapon  == "paper" {
-                    return "You lose";
-                    break;
-            }
-            else {
-                    return "You win";
-                    break;
-            }
-        case userWeapon == "paper":
-            if cpuWeapon == "rock" {
-                return "You win!";
-                break;
-            }
-            else if cpuWeapon  == "paper" {
-                return "Draw! Go Again";
-            }
-            else {
-                return "You lose";
-                break;
-            }
-        case userWeapon == "scissors":
-            if cpuWeapon == "rock" {
-                return "You lose";
-                break;
-            }
-            else if cpuWeapon  == "paper" {
-                return "You win!";
-                break;
-            }
-            else {
-                return "Draw! Go again";
-            }
-        default:
-            return "input error";
-    }
-}
-    console.log(playRound(userWeapon, cpuWeapon));
-    //most straightforward solution that comes to mind is making one large switch statements with other conditional embedded
-//the problem I'm trying to solve is taking the pieces that I have and putting it together into something that cna be tested in a console
 </script>
 
 </html>
