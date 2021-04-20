@@ -21,12 +21,15 @@ function validChoice() {
 }
 console.log(validChoice());
 
+let random = Math.floor(Math.random() * choiceArray.length);
+
 function computerPlay() {
     let choiceArray = ['rock', 'paper', 'scissors'];
-    const random = Math.floor(Math.random() * choiceArray.length);
+    
 }
 
-console.log(random, choiceArray[random]);
+console.log(choiceArray[random]);
+console.log(random);
 </script>
 
 </html>
