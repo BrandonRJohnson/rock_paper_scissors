@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <p> version 1.6.3</p>
+    <p> version 1.6.5</p>
 </body>
 <script>
     //prompt user to input rock, paper or scissors
@@ -21,13 +21,14 @@ function validChoice() {
 }
 console.log(validChoice());
 
-let random = Math.floor(Math.random() * choiceArray.length);
+let randomElement = Math.floor(Math.random() * choiceArray.length);
 
 function computerPlay() {
     let choiceArray = ['rock', 'paper', 'scissors'];
-    
+
 }
 
+console.log(random,choiceArray[random])
 console.log(choiceArray[random]);
 console.log(random);
 </script>
