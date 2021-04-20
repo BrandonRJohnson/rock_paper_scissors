@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <p> version 1.6.7 </p>
+    <p> version 1.6.9 </p>
 </body>
 <script>
     //prompt user to input rock, paper or scissors
@@ -12,6 +12,7 @@ function validChoice() {
 
         // determine what their choice is and if it's valid
         if (input ===  "rock" || "paper" || "scissors") { 
+            let input = userWeapon;
             console.log("This choice is valid");
         }
          // Might need to add aditional code to deal with user inputs with capitals
@@ -24,12 +25,57 @@ console.log(validChoice());
 // function needs to return a random selection from the list rock paper scissors
 let choiceArray = ["rock","paper","scissors"];
 
-function computerChoice() {
+function computerSelection() {
     let randomIndex = Math.floor(Math.random() * choiceArray.length);
     return choiceArray[randomIndex];
+    let cpuWeapon = choiceArray[randomindex];
+}
+// Need to specify that the input for this function is the output of the computerSelection function
+function playRound() {
+    switch(userWeapon) {
+        case userWeapon == "rock":
+            if cpuWeapon == "rock" {
+                    return "Draw! Go again";
+                    // Going to have to loop back to user choice on draws
+            }
+            else if cpuWeapon  == "paper" {
+                    return "You lose";
+                    break;
+            }
+            else {
+                    return "You win";
+                    break;
+            }
+        case userWeapon == "paper":
+            if cpuWeapon == "rock" {
+                return "You win!";
+                break;
+            }
+            else if cpuWeapon  == "paper" {
+                return "Draw! Go Again";
+            }
+            else {
+                return "You lose";
+                break;
+            }
+        case userWeapon == "scissors":
+            if cpuWeapon == "rock" {
+                return "You lose";
+                break;
+            }
+            else if cpuWeapon  == "paper" {
+                return "You win!";
+                break;
+            }
+            else {
+                return "Draw! Go again";
+            }
+        default:
+            return "input error";
+    }
 }
 
-console.log(computerChoice());
+console.log(playRound());  
 
 </script>
 
