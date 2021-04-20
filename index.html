@@ -12,7 +12,7 @@ function validChoice() {
 
         // determine what their choice is and if it's valid
         if (input ===  "rock" || "paper" || "scissors") { 
-            let input = userWeapon;
+            let userWeapon = input;
             console.log("This choice is valid");
         }
          // Might need to add aditional code to deal with user inputs with capitals
@@ -28,17 +28,20 @@ let choiceArray = ["rock","paper","scissors"];
 function computerSelection() {
     let randomIndex = Math.floor(Math.random() * choiceArray.length);
     return choiceArray[randomIndex];
-    let cpuWeapon = choiceArray[randomindex];
+    
 }
+
+let cpuWeapon = choiceArray[randomindex];
+
 // Need to specify that the input for this function is the output of the computerSelection function
 function playRound() {
     switch(userWeapon) {
-        case userWeapon == "rock":
-            if cpuWeapon == "rock" {
+        case userWeapon === "rock":
+            if cpuWeapon === "rock" {
                     return "Draw! Go again";
                     // Going to have to loop back to user choice on draws
             }
-            else if cpuWeapon  == "paper" {
+            else if cpuWeapon  === "paper" {
                     return "You lose";
                     break;
             }
@@ -46,24 +49,24 @@ function playRound() {
                     return "You win";
                     break;
             }
-        case userWeapon == "paper":
-            if cpuWeapon == "rock" {
+        case userWeapon === "paper":
+            if cpuWeapon === "rock" {
                 return "You win!";
                 break;
             }
-            else if cpuWeapon  == "paper" {
+            else if cpuWeapon  === "paper" {
                 return "Draw! Go Again";
             }
             else {
                 return "You lose";
                 break;
             }
-        case userWeapon == "scissors":
-            if cpuWeapon == "rock" {
+        case userWeapon === "scissors":
+            if cpuWeapon === "rock" {
                 return "You lose";
                 break;
             }
-            else if cpuWeapon  == "paper" {
+            else if cpuWeapon  === "paper" {
                 return "You win!";
                 break;
             }
