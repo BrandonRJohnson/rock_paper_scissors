@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <p> version 1.7.5 </p>
+    <p> version 1.7.7 </p>
 </body>
 <script>
     //prompt user to input rock, paper or scissors
@@ -36,7 +36,7 @@ console.log(computerSelection());
 // Need to specify that the input for this function is the output of the computerSelection function
 function playRound(input, computerSelection) {
     switch(input) {
-        case input === "rock":
+        case "rock":
             if (computerSelection() === "rock") {
                     return "Draw! Go again";
                     // Going to have to loop back to user choice on draws
@@ -49,7 +49,7 @@ function playRound(input, computerSelection) {
                     return "You win";
                     break;
             }
-        case input === "paper":
+        case "paper":
             if (computerSelection() === "rock") {
                 return "You win!";
                 break;
@@ -61,7 +61,7 @@ function playRound(input, computerSelection) {
                 return "You lose";
                 break;
             }
-        case input === "scissors":
+        case "scissors":
             if (computerSelection() === "rock") {
                 return "You lose";
                 break;
