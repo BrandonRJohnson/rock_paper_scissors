@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <p> version 1.7.1 </p>
+    <p> version 1.7.2 </p>
 </body>
 <script>
     //prompt user to input rock, paper or scissors
@@ -36,7 +36,7 @@ function computerSelection() {
 console.log(choiceArray[randomindex]);
 
 // Need to specify that the input for this function is the output of the computerSelection function
-function playRound(validChoice(), computerSelection()) {
+function playRound(validChoice, computerSelection) {
     switch(validChoice()) {
         case validChoice() === "rock":
             if (computerSelection() === "rock") {
@@ -80,6 +80,7 @@ function playRound(validChoice(), computerSelection()) {
     }
 }
 
+console.log(playRound("rock", "rock"));
 console.log(playRound(validChoice(), computerSelection()));  
 
 </script>
