@@ -2,10 +2,19 @@
 <html>
 <body>
     <p> version 1.7.9 </p>
+    <button id="rock">rock</button>
+    <button id="paper">paper</button>
+    <button id="scissors">scissors</button>
 </body>
 <script>
     //prompt user to input rock, paper or scissors
-let  input = window.prompt("Choose your weapon! (Rock, Paper or Scissors): ");
+const buttons = document.querySelectorAll('button');
+buttons.forEach(button) => {
+
+}
+button.addEventListener('click', (){
+    alert(button.id);
+});
 let userWin = 0;
 let userLose = 0;
 let userDraw = 0;
@@ -96,7 +105,7 @@ function playRound(input, computerSelection) {
 }
 
 console.log(playRound("rock", "rock"));
-console.log(playRound(input, computerSelection()));  
+console.log(playRound(input, computerSelection())); 
 
 </script>
 
