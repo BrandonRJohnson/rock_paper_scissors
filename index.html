@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <p> version 1.7.7 </p>
+    <p> version 1.7.8 </p>
 </body>
 <script>
     //prompt user to input rock, paper or scissors
@@ -37,11 +37,11 @@ console.log(computerSelection());
 function playRound(input, computerSelection) {
     switch(input) {
         case "rock":
-            if (computerSelection() === "rock") {
+            if (computerSelection === "rock") {
                     return "Draw! Go again";
                     // Going to have to loop back to user choice on draws
             }
-            else if (computerSelection()  === "paper") {
+            else if (computerSelection  === "paper") {
                     return "You lose";
                     break;
             }
@@ -50,11 +50,11 @@ function playRound(input, computerSelection) {
                     break;
             }
         case "paper":
-            if (computerSelection() === "rock") {
+            if (computerSelection === "rock") {
                 return "You win!";
                 break;
             }
-            else if (computerSelection()  === "paper") {
+            else if (computerSelection  === "paper") {
                 return "Draw! Go Again";
             }
             else {
@@ -62,11 +62,11 @@ function playRound(input, computerSelection) {
                 break;
             }
         case "scissors":
-            if (computerSelection() === "rock") {
+            if (computerSelection === "rock") {
                 return "You lose";
                 break;
             }
-            else if (computerSelection()  === "paper") {
+            else if (computerSelection  === "paper") {
                 return "You win!";
                 break;
             }
