@@ -36,16 +36,14 @@ function computerSelection() {
 console.log(choiceArray[randomindex]);
 
 // Need to specify that the input for this function is the output of the computerSelection function
-function playRound(userWeapon, cpuWeapon) {
-    let userWeapon = validChoice();
-    let cpuWeapon = computerSelection();
-    switch(userWeapon) {
-        case userWeapon === "rock":
-            if (cpuWeapon === "rock") {
+function playRound(validChoice(), computerSelection()) {
+    switch(validChoice()) {
+        case validChoice() === "rock":
+            if (computerSelection() === "rock") {
                     return "Draw! Go again";
                     // Going to have to loop back to user choice on draws
             }
-            else if (cpuWeapon  === "paper") {
+            else if (computerSelection()  === "paper") {
                     return "You lose";
                     break;
             }
@@ -53,24 +51,24 @@ function playRound(userWeapon, cpuWeapon) {
                     return "You win";
                     break;
             }
-        case userWeapon === "paper":
-            if (cpuWeapon === "rock") {
+        case validChoice() === "paper":
+            if (computerSelection() === "rock") {
                 return "You win!";
                 break;
             }
-            else if (cpuWeapon  === "paper") {
+            else if (computerSelection()  === "paper") {
                 return "Draw! Go Again";
             }
             else {
                 return "You lose";
                 break;
             }
-        case userWeapon === "scissors":
-            if (cpuWeapon === "rock") {
+        case validChoice() === "scissors":
+            if (computerSelection() === "rock") {
                 return "You lose";
                 break;
             }
-            else if (cpuWeapon  === "paper") {
+            else if (computerSelection()  === "paper") {
                 return "You win!";
                 break;
             }
@@ -82,7 +80,7 @@ function playRound(userWeapon, cpuWeapon) {
     }
 }
 
-console.log(playRound(userWeapon, cpuWeapon));  
+console.log(playRound(validChoice(), computerSelection()));  
 
 </script>
 
