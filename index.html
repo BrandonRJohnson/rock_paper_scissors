@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <p> version 1.7 </p>
+    <p> version 1. </p>
 </body>
 <script>
     //prompt user to input rock, paper or scissors
@@ -12,7 +12,7 @@ function validChoice() {
 
         // determine what their choice is and if it's valid
         if (input ===  "rock" || "paper" || "scissors") { 
-            let userWeapon = input;
+            return input;
             console.log("This choice is valid");
         }
          // Might need to add aditional code to deal with user inputs with capitals
@@ -21,6 +21,7 @@ function validChoice() {
         }
 }
 console.log(validChoice());
+console.log(input);
 
 // function needs to return a random selection from the list rock paper scissors
 let choiceArray = ["rock","paper","scissors"];
@@ -31,11 +32,13 @@ function computerSelection() {
     
 }
 
-let cpuWeapon = choiceArray[randomindex];
+
 console.log(choiceArray[randomindex]);
 
 // Need to specify that the input for this function is the output of the computerSelection function
-function playRound() {
+function playRound(userWeapon, cpuWeapon) {
+    let userWeapon = validChoice();
+    let cpuWeapon = computerSelection();
     switch(userWeapon) {
         case userWeapon === "rock":
             if (cpuWeapon === "rock") {
@@ -79,7 +82,7 @@ function playRound() {
     }
 }
 
-console.log(playRound());  
+console.log(playRound(userWeapon, cpuWeapon));  
 
 </script>
 
