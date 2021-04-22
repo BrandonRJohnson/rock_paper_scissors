@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <p> version 1.7.9 </p>
-    <button id="rock">rock</button>
-    <button id="paper">paper</button>
-    <button id="scissors">scissors</button>
+    <p> version 1.8.0 </p>
+    <button id="rock" onclick="selectRock()">rock</button>
+    <button id="paper" onclick="selectPaper()">paper</button>
+    <button id="scissors" onclick="selectScissors()">scissors</button>
 </body>
 <script>
     //prompt user to input rock, paper or scissors
-const buttons = document.querySelectorAll('button');
-buttons.forEach(button) => {
-
-}
-button.addEventListener('click', (){
-    alert(button.id);
-});
 let userWin = 0;
 let userLose = 0;
 let userDraw = 0;
+
+function selectRock() {
+    input = "rock";
+}
+function selectPaper() {
+    input = "paper";
+}
+function selectScissors() {
+    input = "scissors";
+}
 
 function validChoice() {
     // make sure the input is recorded with this command
