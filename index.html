@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <p> version 1.8.0 </p>
+    <p> version 1.8.1 </p>
     <button id="rock" onclick="selectRock()">rock</button>
     <button id="paper" onclick="selectPaper()">paper</button>
     <button id="scissors" onclick="selectScissors()">scissors</button>
@@ -14,12 +14,18 @@ let userDraw = 0;
 
 function selectRock() {
     input = "rock";
+    console.log("You've selected Rock!");
+    return input;
 }
 function selectPaper() {
     input = "paper";
+    console.log("You've selected Paper!");
+    return input;
 }
 function selectScissors() {
     input = "scissors";
+    console.log("You've selected Scissors!");
+    return input;
 }
 
 function validChoice() {
